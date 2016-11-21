@@ -1,0 +1,37 @@
+extends base
+block main
+  include __blocks/timer
+  section.section.greet
+    .greet__item
+      h2.section__h2 Welcome!
+      p.section__p
+        | The biggest envato community meetup in Bangladesh is happening right now!
+        | And you can be a part of it too... Get together with members of the Envato
+        | community to talk shop, trade war stories, make new friends and see the faces
+        | behind the avatars. Whether you’re an author on Envato Market, a client on
+        | Envato Studio, or a learner on Tuts+, you are invited!It doesn’t matter as
+        | long as you have the motivation and interest to work at the envato and bring
+        | cookies to our event. Just kidding, but we don’t mind having more cookies! ;)
+        | Head over and fill up the sign up form here so that we can keep track of our
+        | guests. Don’t forget to register on our <strong>nvite</strong> page here too!
+    .greet__item
+      form.sign
+        header.sign__header
+          .layout
+            h4.section__h4 Sign up for our event
+        .sign__main
+          .layout
+            input(type='text' name='sign' placeholder='Sign').input
+          .layout
+            input(type='email' name='email' placeholder='Enter your email').input
+          .layout
+            input(type='tel' name='phone' placeholder='Phone number').input
+          .layout
+            input(type='text' name='name' placeholder='Envato Username').input
+        footer.sign__footer
+          .layout
+            input(type='submit' name='submit' value='Let me in!').input__submit
+          .layout
+            p.sign__text
+              | Hurry up, Limited seats availble
+              | *we will never spam your email
